@@ -1,0 +1,173 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "C"
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_C
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/sdk/bindings/xpcom/lib/VirtualBox_i.c" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/sdk/bindings/xpcom/lib/VirtualBox_i.c.o"
+  )
+set(CMAKE_C_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "BUILDING_LIBVBOX"
+  "RT_OS_LINUX"
+  "VBOX_WITH_XPCOM_NAMESPACE_CLEANUP"
+  )
+
+# The include file search paths:
+set(CMAKE_C_TARGET_INCLUDE_PATH
+  "../include"
+  "../src"
+  "include"
+  "../sdk/bindings/xpcom/include"
+  "../sdk/bindings/xpcom/include/nsprpub"
+  "../sdk/bindings/xpcom/include/string"
+  "../sdk/bindings/xpcom/include/xpcom"
+  "../sdk/bindings/xpcom/include/ipcd"
+  )
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/additionsfacility.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/additionsfacility.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/appliance.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/appliance.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/audioadapter.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/audioadapter.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/bandwidthcontrol.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/bandwidthcontrol.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/bandwidthgroup.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/bandwidthgroup.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/biossettings.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/biossettings.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/certificate.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/certificate.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/cloudclient.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/cloudclient.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/cloudprofile.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/cloudprofile.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/cloudprovider.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/cloudprovider.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/cloudprovidermanager.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/cloudprovidermanager.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/comstring.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/comstring.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/console.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/console.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/cpuchangedevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/cpuchangedevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/cursorpositionchangedevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/cursorpositionchangedevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/datastream.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/datastream.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/dhcpserver.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/dhcpserver.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/directory.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/directory.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/display.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/display.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/displaysourcebitmap.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/displaysourcebitmap.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/dndbase.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/dndbase.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/dndsource.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/dndsource.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/dndtarget.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/dndtarget.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/emulatedusb.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/emulatedusb.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/errorwrap.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/errorwrap.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/event.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/event.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/eventlistener.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/eventlistener.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/eventsource.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/eventsource.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/extpack.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/extpack.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/extpackmanager.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/extpackmanager.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/extpackplugin.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/extpackplugin.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/extradatachangedevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/extradatachangedevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/file.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/file.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/framebuffer.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/framebuffer.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/framebufferoverlay.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/framebufferoverlay.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/fsobjinfo.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/fsobjinfo.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/guest.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/guest.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/guestfileevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/guestfileevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/guestfileioevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/guestfileioevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/guestkeyboardevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/guestkeyboardevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/guestmonitorchangedevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/guestmonitorchangedevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/guestmouseevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/guestmouseevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/guestmultitouchevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/guestmultitouchevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/guestostype.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/guestostype.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/guestprocessevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/guestprocessevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/guestprocessioevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/guestprocessioevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/guestscreeninfo.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/guestscreeninfo.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/guestsession.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/guestsession.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/guestsessionevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/guestsessionevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/guestuserstatechangedevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/guestuserstatechangedevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/host.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/host.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/hostnetworkinterface.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/hostnetworkinterface.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/hostpcideviceplugevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/hostpcideviceplugevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/hostvideoinputdevice.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/hostvideoinputdevice.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/internalmachinecontrol.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/internalmachinecontrol.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/internalprogresscontrol.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/internalprogresscontrol.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/internalsessioncontrol.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/internalsessioncontrol.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/keyboard.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/keyboard.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/keyboardledschangedevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/keyboardledschangedevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/machine.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/machine.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/machinedebugger.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/machinedebugger.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/machineevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/machineevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/medium.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/medium.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/mediumattachment.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/mediumattachment.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/mediumevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/mediumevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/mediumformat.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/mediumformat.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/mediumio.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/mediumio.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/modechangedevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/modechangedevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/mouse.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/mouse.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/mousecapabilitychangedevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/mousecapabilitychangedevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/mousepointershape.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/mousepointershape.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/mousepointershapechangedevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/mousepointershapechangedevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/natengine.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/natengine.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/natnetwork.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/natnetwork.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/natnetworkchangedevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/natnetworkchangedevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/natredirectevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/natredirectevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/networkadapter.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/networkadapter.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/objchangedevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/objchangedevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/parallelport.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/parallelport.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/pciaddress.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/pciaddress.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/pcideviceattachment.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/pcideviceattachment.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/performancecollector.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/performancecollector.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/performancemetric.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/performancemetric.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/process.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/process.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/progress.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/progress.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/progressevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/progressevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/recordingscreensettings.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/recordingscreensettings.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/recordingsettings.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/recordingsettings.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/reusableevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/reusableevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/runtimeerrorevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/runtimeerrorevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/serialport.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/serialport.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/session.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/session.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/sharedfolder.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/sharedfolder.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/showwindowevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/showwindowevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/snapshot.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/snapshot.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/snapshotevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/snapshotevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/statechangedevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/statechangedevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/storagecontroller.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/storagecontroller.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/systemproperties.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/systemproperties.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/token.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/token.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/unattended.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/unattended.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/usbcontroller.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/usbcontroller.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/usbdevice.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/usbdevice.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/usbdevicefilter.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/usbdevicefilter.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/usbdevicefilters.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/usbdevicefilters.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/usbproxybackend.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/usbproxybackend.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/vboxwrap.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/vboxwrap.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/vetoevent.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/vetoevent.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/vfsexplorer.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/vfsexplorer.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/virtualbox.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/virtualbox.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/virtualboxclient.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/virtualboxclient.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/virtualboxerrorinfo.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/virtualboxerrorinfo.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/virtualsystemdescription.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/virtualsystemdescription.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/vrdeserver.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/vrdeserver.cpp.o"
+  "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/lib/vrdeserverinfo.cpp" "/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir/lib/vrdeserverinfo.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "BUILDING_LIBVBOX"
+  "RT_OS_LINUX"
+  "VBOX_WITH_XPCOM_NAMESPACE_CLEANUP"
+  )
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../include"
+  "../src"
+  "include"
+  "../sdk/bindings/xpcom/include"
+  "../sdk/bindings/xpcom/include/nsprpub"
+  "../sdk/bindings/xpcom/include/string"
+  "../sdk/bindings/xpcom/include/xpcom"
+  "../sdk/bindings/xpcom/include/ipcd"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

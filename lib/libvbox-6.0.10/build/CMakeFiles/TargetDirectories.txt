@@ -1,0 +1,7 @@
+/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/install/strip.dir
+/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/edit_cache.dir
+/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/vbox.dir
+/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/list_install_components.dir
+/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/install/local.dir
+/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/rebuild_cache.dir
+/root/project/VirtualizationCoreAPI/lib/libvbox-6.0.10/build/CMakeFiles/install.dir

@@ -1,0 +1,241 @@
+syntax = "proto3";
+
+//包名是生成代码时候的namespace, 所有代码都在namespace下面
+//protoc -I ./ --cpp_out=. qigrpc.proto
+//protoc -I ./ --grpc_out=. --plugin=protoc-gen-grpc=/usr/local/bin/grpc_cpp_plugin qigrpc.proto
+
+package Qigrpc;
+
+//***vca***
+
+message requestNull {
+    /*
+    public：请求携带数据为空
+    */
+}
+
+message requestSimple {
+    /*
+    public:请求携带方法名，虚拟机名字<虚拟机删除也走这个message>
+    */
+    int32 vcamethod = 1;
+    string vmname = 2;
+}
+
+message requestSnapshot {
+    int32 vcamethod = 1; //请求方法名字
+    string vmname = 2; //虚拟机名字
+    string snapshotname = 3; //快照名字
+}
+
+message requestClone {
+    int32 vcamethod = 1; //请求方法
+    string vmname = 2; //虚拟机名字
+    string targetvmname = 3;
+    string basefolder = 4; //基础路径
+    bool keepmacs = 5; //是否保存mac
+    bool keephwuuids = 6; //是否保存硬件uuid
+    bool keepdiskname = 7; //是否保存磁盘名字
+}
+
+message requestInstall {
+    int32 vcamethod = 1; //请求方法名
+    string vmname = 2; //虚拟机名字
+    string ostypeid = 3; //系统类型
+    int32 cpucount = 4; //cpu数量
+    int32 memorysize = 5; //内存大小
+    string basefolder = 6; //基础路径
+    string sourcepath = 7; //iso或者img路径
+    string storagebustype = 8; //磁盘接口类型
+    int64 logicdisksize = 9; //磁盘大小，注意是long int类型
+    string diskformat = 10; //iso或者img的链接接口类型
+    bool fix = 11; //是否固定磁盘大小
+}
+
+message requestImpAndexportVM {
+    int32 vcamethod = 1; //请求方法名
+    string vmname = 2; //虚拟机名字
+    string ovapath = 3; //ova磁盘资源path
+    string exportpath = 4;
+    bool keepmac = 5; //是否保留mac
+    string ostypeid = 6; //系统类型
+    int32 cpucount = 7; //cpu数量
+    int32 memory = 8; //内存大小
+    bool netup = 9; //启用一张网卡
+    string basefolder = 10; //虚拟机存储基础路径
+    string ovsfiletype = 11; //导出磁盘文件类型
+}
+
+message requestNetwork {
+    int32 vcamethod = 1; //请求方法名字
+    string vmname = 2; //虚拟机名字
+    int32 slot = 3; //网卡slot号码
+    string hostpciname = 4; //主机网卡名字
+    string mac = 5; //设置mac地址
+}
+
+message requestRdp {
+    int32 vcamethod = 1; //请求的方法
+    string vmname = 2; //虚拟机名字
+    string listenaddress = 3; //rdp监听地址
+    int32 listenport = 4; //rdp监听端口
+    bool allowmulticonnect = 5; //是否允许多链接
+    bool reusesingleconnect = 6; //是否重用单链接
+
+}
+
+message requestRecord {
+    int32 vcamethod = 1; //请求的方法
+    string vmname = 2; //虚拟机名字
+    bool on = 3; //是否启用录制
+    int32 screenid = 4; //屏幕id
+    string basefolder = 5; //视频存储基本路径
+    int32 width = 6; //视频宽度（屏幕宽度）
+    int32 height = 7; //视频height
+    int32 fps = 8; //帧率
+    int32 kbps = 9; //比特率
+}
+
+message requestSharefolder {
+    int32 vcamethod = 1; //请求的方法名
+    string vmname = 2; //虚拟机名字
+    string sharefoldername = 3; //共享文件夹名字
+    string serverpath = 4; //服务器端共享路径
+    bool writeable = 5; //是否有写权限
+    string internalpath = 6; //虚拟机内挂载点
+}
+
+message requestConfig {
+    int32 vcamethod = 1; //请求的方法名
+    string vmname = 2; //虚拟机名字
+    int32 cpucount = 3; //cpu数量
+    int32 memorysize = 4; //内存大小
+    int32 ramsize = 5; //显存大小
+    int32 monitorcount = 6; //屏幕数量
+    bool enable3d = 7; //是否支持3D
+}
+
+message requestUSB {
+    int32 vcamethod = 1; //请求的方法名
+    string vmname = 2; //虚拟机名字
+    string usbname = 3; //usb控制器名字
+    string usbtype = 4; //usb类型
+}
+
+message requestAudio {
+    int32 vcamethod = 1; //请求的方法名
+    string vmname = 2; //虚拟机名字
+    bool audioswitch = 3; //启用声卡
+    bool audioin = 4; //声音进
+    bool audioout = 5; //声音出
+}
+
+message requestSerial {
+    int32 vcamethod = 1; //请求的方法名
+    string vmname = 2; //虚拟机名字
+    int32 slot = 3; //串口slot号码
+}
+
+//***vca***
+message requestP2P {
+    int32 vcamethod = 1; //请求的方法名
+    string sharefilepath = 2; //资源文件路径
+    string shareseedpath = 3; //资源文件种子路径
+    string shareip = 4; //分享文件的服务器ip址址
+    string downloadip = 5; //目标服务器ip地址
+    string downloadseedpath = 6; //种子目标路径
+    string downloadfilepath = 7; //下载机器上的存储全路径
+}
+
+//***extends***
+message requestVmExtends {
+    int32 vcamethod = 1; //请求的方法名
+    string vmname = 2; //VM 名字
+    string diskname = 3; //磁盘名字
+    string diskuuid = 4; //disk uuid
+    string diskformattype = 5; //磁盘格式化类型
+    string basefolder = 6; //磁盘基础路径
+    int64 size = 7; //磁盘大小
+    string storagecontroller = 8; //磁盘控制器名
+    int32 slot = 9; //磁盘位置1, 2, 3, 4，支持3块磁盘位置
+}
+
+//***replay***
+message vcaReply {
+    string vcamethod = 1; //方法
+    string data = 2; //数据
+    int32 code = 3; //返回码
+}
+
+//指定服务名称,作为生成代码中的二级namespace
+service Server {
+
+    //测试接口
+    rpc Test (requestNull) returns (vcaReply) {
+    }
+
+    //获取主机信息
+    rpc HostInfo (requestNull) returns (vcaReply) {
+    }
+
+    //虚拟机装机
+    rpc VmInstall (requestInstall) returns (vcaReply) {
+    }
+
+    //虚拟机的普通操作服务<API-002-009>
+    rpc VmCommon (requestSimple) returns (vcaReply) {
+    }
+
+    //虚拟机的快照
+    rpc VmOperateSnapshot (requestSnapshot) returns (vcaReply) {
+    }
+
+    //虚拟机的克隆
+    rpc VmClone (requestClone) returns (vcaReply) {
+    }
+
+    //虚拟机导入&导出
+    rpc VmImpAndExp (requestImpAndexportVM) returns (vcaReply) {
+    }
+
+    //虚拟机网卡设置
+    rpc VmNetwork (requestNetwork) returns (vcaReply) {
+    }
+
+    //虚拟机rdp
+    rpc VmRdp (requestRdp) returns (vcaReply) {
+    }
+
+    //虚拟机录屏幕
+    rpc VmRecord (requestRecord) returns (vcaReply) {
+    }
+
+    //虚拟机共享文件夹
+    rpc VmSharefolder (requestSharefolder) returns (vcaReply) {
+    }
+
+    //虚拟机cpu，内存，显卡配置
+    rpc VmConfig (requestConfig) returns (vcaReply) {
+    }
+
+    //虚拟机usb
+    rpc VmUSB (requestUSB) returns (vcaReply) {
+    }
+
+    //虚拟机声卡
+    rpc VmAudio (requestAudio) returns (vcaReply) {
+    }
+
+    //虚拟机串口
+    rpc VmSerial (requestSerial) returns (vcaReply) {
+    }
+
+    //p2p接口
+    rpc P2P (requestP2P) returns (vcaReply) {
+    }
+
+    //requestVmExtends接口:创建磁盘;附加磁盘
+    rpc VmExtends (requestVmExtends) returns (vcaReply) {
+    }
+
+}

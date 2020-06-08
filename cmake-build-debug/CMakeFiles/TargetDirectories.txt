@@ -1,0 +1,3 @@
+/root/VirtualizationCoreAPI/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/root/VirtualizationCoreAPI/cmake-build-debug/CMakeFiles/VirtualizationCoreAPI.dir
+/root/VirtualizationCoreAPI/cmake-build-debug/CMakeFiles/edit_cache.dir

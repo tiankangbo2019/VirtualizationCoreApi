@@ -1,0 +1,109 @@
+path->/root/centos02.ova
+refs->
+refs->
+refs->
+refs->
+refs->
+refs->
+refs->
+refs->
+refs->
+refs->
+refs->
+refs->3
+refs->4
+refs->5
+refs->vmdisk2
+OVFValues->80
+OVFValues->centos01
+OVFValues->
+OVFValues->
+OVFValues->
+OVFValues->1
+OVFValues->1073741824
+OVFValues->
+OVFValues->
+OVFValues->Bridged
+OVFValues->
+OVFValues->PIIX4
+OVFValues->PIIX4
+OVFValues->AHCI
+OVFValues->centos02-disk001.vmdk
+VBoxValues->RedHat_64
+VBoxValues->centos01 3
+VBoxValues->/
+VBoxValues->/root/VirtualBox VMs/centos01 3/centos01 3.vbox
+VBoxValues->/root/VirtualBox VMs
+VBoxValues->1
+VBoxValues->1024
+VBoxValues->0
+VBoxValues->
+VBoxValues->3
+VBoxValues->
+VBoxValues->PIIX4
+VBoxValues->PIIX4
+VBoxValues->AHCI
+VBoxValues->centos02-disk001.vmdk
+extraConfigValues->
+extraConfigValues->
+extraConfigValues->
+extraConfigValues->
+extraConfigValues->
+extraConfigValues->
+extraConfigValues->
+extraConfigValues->
+extraConfigValues->
+extraConfigValues->slot=0;type=Bridged
+extraConfigValues->
+extraConfigValues->
+extraConfigValues->
+extraConfigValues->
+extraConfigValues->controller=13;channel=0
+
+
+
+//    VRDE property: VideoChannel/Enabled = <not set>
+//    VRDE property: VideoChannel/Quality = <not set>
+//    VRDE property: VideoChannel/DownscaleProtection = <not set>
+//    VRDE property: Client/DisableDisplay = <not set>
+//    VRDE property: Client/DisableInput = <not set>
+//    VRDE property: Client/DisableAudio = <not set>
+//    VRDE property: Client/DisableUSB = <not set>
+//    VRDE property: Client/DisableClipboard = <not set>
+//    VRDE property: Client/DisableUpstreamAudio = <not set>
+//    VRDE property: Client/DisableRDPDR = <not set>
+//    VRDE property: H3DRedirect/Enabled = <not set>
+//    VRDE property: Security/Method = <not set>
+//    VRDE property: Security/ServerCertificate = <not set>
+//    VRDE property: Security/ServerPrivateKey = <not set>
+//    VRDE property: Security/CACertificate = <not set>
+//    VRDE property: Audio/RateCorrectionMode = <not set>
+//    VRDE property: Audio/LogPath = <not set>
+
+传统的交换机设备都是支持VLAN隔离的，OpenvSwitch作为一个主流的虚拟交换机，自然也是支持VLAN相关的实现的。OVS交换机内部也可以通过VLAN ID来隔离交换机的各个端口。
+
+例如：如果一个OVS交换机的端口设置了tag标签（该端口处于access模式），数据包从该端口进入到交换机内部时，该数据包就会被打上对应的tag，于是该数据包也就只能从设置了相同tag的端口发出，而在出交换机的时候，数据包上的tag会被删除。这样就实现了交换机内部的一个隔离。
+
+
+查看port属性
+ovs-vsctl list interface <port name>
+
+删除port配置
+ovs-vsctl remove port <port name> <config item> <config value>
+# 例如
+ovs-vsctl remove port <port name> tag 100
+ovs-vsctl remove port <port name> trunk 200
+
+设置vlan trunk
+ovs-vsctl set port <port name> trunk=100,200
+
+设置vlan tag
+ovs-vsctl set port <port name> tag=<tag值>
+
+设置vlan mode
+ovs-vsctl set port <port name> VLAN_mode=trunk|access|native-tagged|native-untagged
+
+查看flow table
+$ ovs-ofctl dump-flows vswitch0
+
+

@@ -1,0 +1,38 @@
+
+vdeserver state->1
+ip->127.0.0.1:port->3389
+user->:domain
+clientcount->6:clientname->t-desktop:version2600
+encryption->0
+begin->1574769975727:end->1574769980707
+bytesReceived->2525:bytesReceivedTotal->2525
+bytesSent->34454:bytesSentTotal->34454
+
+
+/*
+Drag'n'drop Mode: disabled
+VRDE:enabled (Address 127.0.0.1, Ports 3389, MultiConn: on, ReuseSingleConn: off, Authentication type: external)
+Video redirection: disabled
+VRDE property: TCP/Ports  = "3389"
+VRDE property: TCP/Address = "127.0.0.1"
+VRDE property: VideoChannel/Enabled = <not set>
+VRDE property: VideoChannel/Quality = <not set>
+VRDE property: VideoChannel/DownscaleProtection = <not set>
+VRDE property: Client/DisableDisplay = <not set>
+VRDE property: Client/DisableInput = <not set>
+VRDE property: Client/DisableAudio = <not set>
+VRDE property: Client/DisableUSB = <not set>
+VRDE property: Client/DisableClipboard = <not set>
+VRDE property: Client/DisableUpstreamAudio = <not set>
+VRDE property: Client/DisableRDPDR = <not set>
+VRDE property: H3DRedirect/Enabled = <not set>
+VRDE property: Security/Method = <not set>
+VRDE property: Security/ServerCertificate = <not set>
+VRDE property: Security/ServerPrivateKey = <not set>
+VRDE property: Security/CACertificate = <not set>
+VRDE property: Audio/RateCorrectionMode = <not set>
+VRDE property: Audio/LogPath = <not set>
+ */
+
+
+

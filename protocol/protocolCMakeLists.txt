@@ -1,0 +1,40 @@
+cmake_minimum_required(VERSION 3.5)
+project(Qigrpc)
+
+set(CMAKE_CXX_STANDARD 11)
+SET(CMAKE_C_COMPILER g++)
+add_compile_options(-std=c++11)
+
+
+#/usr/local/protobuf/lib/libprotobuf.so
+#-lgrpc++ -lgrpc -lprotobuf -lgpr -lz -laddress_sorting -lpthread -Wno-deprecated
+# 查找当前目录下所有的源文件，并将名称保存到DIR_SRCS中
+aux_source_directory(. DIR_SRCS)
+
+# 添加第三方的库
+set(INC_DIR /usr/local/include/)
+set(INC_DIR /usr/local/proto3/include/)
+set(LINK_DIR /usr/local/lib/)
+set(LINK_DIR /usr/local/proto3/lib/)
+set(LINK_DIR /lib/x86_64-linux-gnu/)
+
+
+include_directories(${INC_DIR})
+link_directories(${LINK_DIR})
+link_libraries(protobuf)
+link_libraries(grpc++)
+link_libraries(grpc)
+link_libraries(gpr)
+link_libraries(z)
+link_libraries(address_sorting)
+link_libraries(pthread)
+
+add_executable(Qigrpc ${DIR_SRCS} vca_controller.cpp vca_controller.h vca_handleType.h)
+
+target_link_libraries(Qigrpc protobuf)
+target_link_libraries(Qigrpc grpc++)
+target_link_libraries(Qigrpc grpc)
+target_link_libraries(Qigrpc gpr)
+target_link_libraries(Qigrpc z)
+target_link_libraries(Qigrpc address_sorting)
+target_link_libraries(Qigrpc pthread)
